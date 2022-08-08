@@ -360,8 +360,7 @@ const twelveItem = function(allItem){
           button.addEventListener('click', (e)=>{
                     // let attr = document.createAttribute("disabled");
                     let btnid = e.target.dataset.id
-                    if ((itemStart >= 0) && (itemEnd <= allItem.length -1)) {     
-                                                
+                    if ((itemStart >= 0) && (itemEnd <= allItem.length -1)) {
                             if(btnid === "next"){
                                 itemStart += 12
                                 itemEnd += 12
@@ -396,11 +395,11 @@ const twelveItem = function(allItem){
                     return displayMenu(nexttwelve)
                 }
                 //  // //DISPALY first 12 ITEMS AT A TIME
-        let twelveItems = allItem.filter(function(index, show12,){
-            //  console.log("we the first twelve")
-            return(show12 >= itemStart && show12  <= itemEnd)
-        });
-        // console.log(twelveItems)
+                let twelveItems = allItem.filter(function(index, show12,){
+                    console.log("we the first twelve")
+                    return(show12 >= itemStart && show12  <= itemEnd)
+                });
+                // console.log(twelveItems)
        return displayMenu(twelveItems)
             }
     }
@@ -427,10 +426,10 @@ const displayMenu = function (menuList){
     displayMenu = displayMenu.join("");
     menuCard.innerHTML = displayMenu;
     if(menuCard.innerHTML == displayMenu == true){
-        menuCard.innerHTML = `<h1 class="text-3xl text-red-200 grid-2 text-center">NO ITEM FOUND</h1>`;
+        noitemfound.classList.remove("hideme")
     }else{
-        console.log("FOUND SOMETHIGN");bg-center
-
+        // console.log("FOUND SOMETHIGN")
+         noitemfound.classList.add("hideme")
     }
     const selectedfood = document.querySelectorAll("#food")
     // console.log(selectedfood)
@@ -461,6 +460,7 @@ menuBtn.forEach(button => {
             // console.log(menuCategory);
             if(btnCategory === "all"){
                 twelveItem(ourMenu);
+                console.log(ourMenu)
             };
     });
 });
@@ -499,12 +499,12 @@ searchBtn.addEventListener('click', () => {
     }
     if (searchFor == "price"){
         value = searchInput.value
-        let searchedForm = ourMenu.filter(function (menuItem){
+        let searchedPrice = ourMenu.filter(function (menuItem){
         if(menuItem[searchFor] == value){
                 return menuItem   
             }
         })
-        twelveItem(searchedForm);
+        twelveItem(searchedPrice);
     }      
     if(searchFor === "all"){
         let searchAll = ourMenu.filter(function (menuItem){
@@ -535,8 +535,6 @@ searchBtn.addEventListener('click', () => {
                 return menuItem;
             }
         })
-    // console.log(searchAll)
-    // console.log(searchme)
     twelveItem(searchme);
     }  
-});``
+});
