@@ -10,7 +10,9 @@
 	<body>
 		<header class="relative w-full">
 			<nav
-				class="fixed z-50 w-full flex flex-wrap items-center justify-center py-4 bg-gray-100 text-gray-500 hover:text-gray-700 focus:text-gray-700 shadow-lg navbar navbar-expand-lg navbar-light"
+				class="fixed z-50 w-full flex flex-wrap items-center justify-center 
+                py-4 bg-white text-gray-500 hover:text-gray-700 focus:text-gray-700 shadow-lg 
+                navbar navbar-expand-lg navbar-light"
 			>
 				<div
 					class="container-fluid w-11/12 flex flex-wrap justify-between px-3"
@@ -139,7 +141,7 @@
 				Our Menu
 			</h3>
 			<article class="w-full md:11/12 m-auto">
-				<div class="lg:w-4/5 text-center text-xs lg:text-lg mx-auto my-4 lg:flex justify-center flex-wrap gap-2">
+				<div class="lg:w-11/12 text-center text-xs lg:text-lg mx-auto my-4 lg:flex justify-center flex-wrap gap-2">
                     <div class="pb-2 lg:pb-0">
                         <button
                             class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
@@ -183,7 +185,7 @@
                         >
                             All
                         </button>
-                        <div class="xl:w-96">
+                        <div class="w-96">
                             <div id="searchFeilds" class="input-group relative flex flex-wrap items-stretch w-full bordergray rounded transition 
                                 ease-in-out focus:text-gray-700">
                                 <input id="searchInput" type="search" class="form-control  focus:border-white outline-none focus:border-0 border-0 flex-auto min-w-0 block  px-3 py-1.5 
@@ -213,7 +215,7 @@
                 </div>
 				<div
 					id="menuCard"
-					class="grid md:grid-cols-2 lg:grid-cols-3 grid-flow-row  gap-6 p-3 bg-white"
+					class="grid md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-6 p-3 bg-white"
 				>
 					<!--  Javascript  will show the content--  -->
                     <!-- <article id="food" class="w-auto rounded-lg shadow-lg m-2 text-center cursor-pointer bg-gray-100 transform hover:scale-105 transition-transform ease-in-out duration-200">
@@ -249,13 +251,18 @@
                     <div class="flex justify-center">
                         <button id="menuNav"
                             data-id="Previous"
-                            desabled
+                            onclick="Previous()"
                             class="Previous relative block py-1.5 px-3  border-0 bg-transparent outline-none 
                             transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"           
                         >Previous</button>
+                        <ul id="pageList" class="flex ">
+                            <li class="p-2">PAGE-1</li>
+                            <li class="p-2">PAGE-2</li>
+                            <li class="p-2">PAGE-3</li>
+                        </ul>
                         <button id="menuNav"
                             data-id="next"
-                            desabled
+                            onclick="next() "
                             class="next relative block py-1.5 px-3  border-0 bg-transparent outline-none 
                             transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none" 
                         >Next</button>
@@ -668,7 +675,7 @@
                     <a
                         class="text-gray-600 font-semibold"
                         href="https:// " target="_blank"
-                        >Dev.Abdulsalm.js</a
+                        >devAbdulsalam.js</a
                     >
                 </div>
 			</footer>

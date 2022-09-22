@@ -342,3 +342,5 @@ loginBtn.addEventListener('click', ()=>{
 // get current year for footer
 // const date = document.getElementById("date");
 // date.innerHTML = new Date().getFullYear().toString();
+
+

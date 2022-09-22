@@ -9,7 +9,7 @@
 	<body>
 		<header class="relative w-full" style="height: 80vh;">
 			<nav
-				class="fixed z-50 w-full flex flex-wrap items-center justify-center py-4 bg-gray-100 text-gray-500 hover:text-gray-700 focus:text-gray-700 shadow-lg navbar navbar-expand-lg navbar-light"
+				class="fixed z-50 w-full flex flex-wrap items-center justify-center py-4 bg-white text-gray-500 hover:text-gray-700 focus:text-gray-700 shadow-lg navbar navbar-expand-lg navbar-light"
 			>
 				<div
 					class="container-fluid w-11/12 flex flex-wrap justify-between px-3"
@@ -17,7 +17,7 @@
 					<a class="text-2xl lg:hidden font-bold text-blue-600" href="#"
 						>BreakFast</a
 					>
-
+					
 					<button
 						class="navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
 						type="button"
@@ -54,7 +54,7 @@
 						>
 						<!-- Left links -->
 						<ul
-							class="navbar block md:flex space-x-4 md:justify-center md:flex-row pl-0 list-style-none lg:mr-6"
+							class="navbar block md:flex space-x-4 md:justify-center items-center md:flex-row pl-0 list-style-none lg:mr-6"
 						>
 							<li class="nav-item pr-2">
 								<a class="nav-link text-xl m-2 text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0"
@@ -99,10 +99,12 @@
 							</li>
 							<li class="nav-item pr-2">
 								<a
-									class="nav-link text-xl m-2 text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0"
-									href="#reviews"
-									>Reviews</a
+								href="form.html"
+								class="inline-flex text-xl py-2 px-6 font-medium tracking-wide bg-slate-200 hover:bg-slate-400 hover:text-white duration-200 
+								rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
 								>
+								Sign in
+								</a>
 							</li>
 						</ul>
 						<!-- Left links -->
@@ -186,26 +188,35 @@
 				<!-- background cover -->
 			<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
 				style="background-color: rgba(8, 28, 43, 0.5)">
-				<div class="flex justify-center items-center h-full">
-					<div class="w-8/12 flex flex-col">
-						<div class="text-white px-6 md:px-12">
-							<h1 class="text-4xl lg:text-6xl font-bold mt-0 mb-6">BREAKFAST & More</h1>
-							<h3 class="text-2xl font-bold mb-8">Focus on your work, We handle your food</h3>
-							<h3 class="text-2xl font-bold mb-8">Because your stomach is important to Us.</h3>
+				<div class="flex flex-col-reverse justify-center gap-3 md:flex-row md:justify-around items-center h-full md:w-5/6 md:mx-auto">
+					<div class="md:w-7/12 flex flex-col justify-center">
+						<div class="text-white px-6 md:px-12 text-center">
+							<h1 class="text-3xl lg:text-6xl hidden md:block font-bold mt-0 mb-6">BREAKFAST & MORE</h1>
+							<!-- <h3 class="text-2xl font-bold mb-8">Focus on your work, We handle your food</h3> -->
+							<h3 class="text-2xl md:text-3xl font-bold mb-4">Enjoy Your Healthy<br />Delicious Food</h3>
+							<h3 class="text-2xl md:text-3xl font-bold mb-4">Because what you eat is what is yours.</h3>
+							<!-- <h3 class="text-2xl font-bold mb-8">Because your stomach is important to Us.</h3> -->
 						</div>
-						<a href="menu.html" class=" text-center w-3/6 lg:m-3">
+						<a href="menu.html" class="text-center my-auto lg:mt-4">
 							<button type="button"
-								class="inline-block text-center px-6 py-2.5 border-2 border-white text-white font-medium text-lg leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+								class="inline-block text-center px-6 py-2.5 border-2 border-white text-white 
+								font-medium text-lg leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
 								data-mdb-ripple="true" data-mdb-ripple-color="light">
 								Order Now
 							</button>
 						</a>
 					</div>
+					<div class="md:w-5/12 mt-7 md:mt-5 md:pl-4 ">
+						<img
+							src="./img/hero-img.png"
+							class="h-96 w-60 md:w-96"
+						>
+					</div>
 				</div>
 			</div>
 			
 		</header>
-		<section id="dishes">
+			<section id="dishes">
 			<div class=" w-full mx-auto flex justify-center flex-col my-6">
 				<div class="full p-1 text-center m-auto">
 					<h1 class="text-4xl font-bold mb-6 text-gray-800">Our Dishes</h1>
@@ -224,17 +235,17 @@
 						/>
 					</div>
 					<div class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
-						<div class="mb-16 lg:my-20 lg:max-w-lg lg:pr-5">
+						<div class="mb-16 lg:my-20 lg:max-w-lg lg:pr-5 text-center">
 							<p class="inline-block px-3 py-3 mb-4 text-xl md:text-3xl font-semibold tracking-wider text-teal-900 
-							uppercase rounded-full bg-teal-accent-400">
+							uppercase debug">
 								@ BREAKFAST & More
 							</p>
-							<h2 class="mb-5 font-sans text-center md:text-left text-3xl font-bold text-gray-900 sm:leading-none md:leading-10">
+							<h2 class="mb-5 font-sans  text-3xl font-bold text-gray-900 sm:leading-none md:leading-10">
 								Every Food you 
 								<br> can imagine
 								<span class="inline-block text-deep-purple-accent-400">is real</span>
 							</h2>
-							<p class="pr-5 mb-5 text-lg text-gray-700 md:text-3xl md:leading-10">
+							<p class="pr-5 mb-5 text-lg text-gray-700 md:text-3xl leading-8 md:leading-10">
 								We make and serve them, Hot Spice, Cold or Chill, 
 								<br class="hidden lg:block">
 								<span class="text-blue-900 font-bold">Just Name it</span>
@@ -251,61 +262,184 @@
 					</div>
 				</div>
 			</section>
-									<!-- our resturant -->									
-		<section id="aboutUs" class="mb-20 text-gray-700 mt-20">
-			<div class="md:w-11/12 lg:w-4/5 m-auto">
-				<div class="text-center md:max-w-xl lg:max-w-3xl mx-auto">
-					<h3 class="text-4xl font-bold mb-6 text-gray-800">Our Resturants</h3>
-					<p class="mb-6 pb-2 md:mb-12 md:pb-0 text-xl">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-						error amet numquam  veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.
-					</p>
-				</div>
-				<div class="px-4 py-6 mx-auto first:lg:shadow-lg sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-					<div class="grid gap-5 row-gap-8 lg:grid-cols-2">
-						<div class="flex flex-col justify-center">
-							<div class="max-w-xl mb-6">
-								<h2 class="max-w-lg mb-6 font-sans text-xl text-center md:text-left lg:text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl sm:leading-none md:leading-10">
-								We serve you Tasty and Delicious meal
-								<span class="relative px-1">
-									<div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400"></div>
-									<span class="relative inline-block text-deep-purple-accent-400">Anytime, Anyday</span>
-								</span>
-								</h2>
-								<p class="text-base text-gray-700 md:text-lg">
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
-								</p>
+			<!-- our resturant -->									
+			<section id="aboutUs" class="text-gray-700 mt-14 bg-gray-200">
+				<div class="md:w-11/12 lg:w-4/5 m-auto py-6 md:py-8">
+					<div class="text-center md:max-w-xl lg:max-w-3xl mx-auto">
+						<h3 class="text-4xl font-bold mb-6 text-gray-800">Our Resturants</h3>
+						<p class="pb-2 md:mb-12 md:pb-0 text-xl">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nostrum quisquam eum porro a pariatur veniam.
+						</p>
+					</div>
+					<div class="px-4 py-6 mx-auto first:lg:shadow-lg sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+						<div class="grid gap-5 row-gap-8 lg:grid-cols-2 ">
+							<div class="md:hidden">
+								<img class="object-cover w-full h-56 rounded shadow-lg sm:h-96" src="./images/004.jpeg" alt="" />
 							</div>
-							<div class="grid gap-5 row-gap-8 sm:grid-cols-2">
-								<div class="bg-white border-l-4 shadow-sm border-deep-purple-accent-400">
-									<div class="h-full p-5 border border-l-0 rounded-r">
-										<h6 class="mb-2 font-semibold leading-5">
-											Kano, Nigeria
-										</h6>
-										<p class="text-lg text-gray-900">
-										Lookout flogging bilge rat main sheet bilge water nipper fluke to go on account heave down.
-										</p>
+							<div class="flex flex-col justify-center">
+								<div class="max-w-xl mb-6">
+									<h2 class="max-w-lg mb-6 font-sans text-xl text-center md:text-left lg:text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl sm:leading-none md:leading-10">
+									We serve you Tasty and Delicious meal
+									<span class="relative px-1">
+										<div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400"></div>
+										<span class="relative inline-block text-deep-purple-accent-400">Anytime, Anyday</span>
+									</span>
+									</h2>
+									<p class="text-base text-gray-700 md:text-lg">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
+									</p>
+								</div>
+								<div class="grid gap-5 row-gap-8 sm:grid-cols-2">
+									<div class="bg-white border-l-4 shadow-sm border-deep-purple-accent-400">
+										<div class="h-full p-5 border border-l-0 rounded-r">
+											<h6 class="mb-2 font-semibold leading-5">
+												Kano, Nigeria
+											</h6>
+											<p class="text-lg text-gray-900">
+											Lookout flogging bilge rat main sheet bilge water nipper fluke to go on account heave down.
+											</p>
+										</div>
+									</div>
+									<div class="bg-white border-l-4 shadow-sm border-deep-purple-accent-400">
+										<div class="h-full p-5 border border-l-0 rounded-r">
+											<h6 class="mb-2 font-semibold leading-5">
+												Lagos, Nigeria
+											</h6>
+											<p class="text-lg text-gray-900">
+											Those options are already baked in with this model shoot me an email clear.
+											</p>
+										</div>
 									</div>
 								</div>
-								<div class="bg-white border-l-4 shadow-sm border-deep-purple-accent-400">
-									<div class="h-full p-5 border border-l-0 rounded-r">
-										<h6 class="mb-2 font-semibold leading-5">
-											Lagos, Nigeria
-										</h6>
-										<p class="text-lg text-gray-900">
-										Those options are already baked in with this model shoot me an email clear.
-										</p>
-									</div>
-								</div>
 							</div>
-						</div>
-						<div>
-							<img class="object-cover w-full h-56 rounded shadow-lg sm:h-96" src="./images/004.jpeg" alt="" />
+							<div class="hidden md:block">
+								<img class="object-cover w-full h-56 rounded shadow-lg sm:h-96" src="./images/004.jpeg" alt="" />
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>			
-		</section>
+				</div>			
+			</section>
+			<!-- Our Menu -->
+			<section
+				id="menus"
+				class="w-full bg-gray-300 py-6"
+			>
+				<h3 class="text-4xl text-center font-bold my-2 text-gray-800">
+					Our Menu
+				</h3>
+				<article class="w-full md:11/12 m-auto lg:w-4/5 mx-auto flex flex-col justify-center">
+					<div class="lg:w-11/12 text-center text-xs lg:text-lg mx-auto my-4 lg:flex justify-center flex-wrap gap-2">
+						<div class="pb-2 lg:pb-0">
+							<button
+								class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+								type="button"
+								id="menuBtn"
+								data-id="breakfast"
+							>
+								BreakFast
+							</button>
+							<button
+								class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+								type="button"
+								id="menuBtn"
+								data-id="lunch"
+							>
+								Lunch
+							</button>
+							<button
+								class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+								type="button"
+								id="menuBtn"
+								data-id="dinner"
+							>
+								Dinner
+							</button>
+							<button
+								class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+								type="button"
+								id="menuBtn"
+								data-id="snack"
+							>
+								Snacks
+							</button>
+						</div>
+						<div class="flex justify-center gap-3 ">
+							<button
+								class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in"
+								type="button"
+								id="menuBtn"
+								data-id="all"
+							>
+								All
+							</button>
+							<div class="w-96">
+								<div id="searchFeilds" class="input-group relative flex flex-wrap items-stretch w-full bordergray rounded transition 
+									ease-in-out focus:text-gray-700">
+									<input id="searchInput" type="search" class="form-control  focus:border-white outline-none focus:border-0 border-0 flex-auto min-w-0 block  px-3 py-1.5 
+									text-base font-normal text-gray-700" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+									<select id="searchby" name="searchby"  class="pr-1  border-none">
+										<option value="all">All</option>
+										<option value="breakfast">Breakfast</option>
+										<option value="lunch">Lunch</option>
+										<option value="dinner">Dinner</option>
+										<option value="snack">Snack</option>
+										<option value="price">Price</option>
+										<option value="tittle">Tittle</option>
+										<option value="desc">Description</option>
+									</select>
+									<button id="searchBtn" class="btn inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md 
+												hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700  
+												focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg 
+												transition duration-150 ease-in-out md:flex items-center" type="button" id="searchBtn" id="button-addon2">
+										<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+										<path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<!-- </div> -->
+						</div>
+					</div>
+					<div
+						id="menuCard"
+						class="grid md:grid-cols-2 lg:grid-cols-3 grid-flow-row  gap-6 p-3"
+					>
+						<!--  Javascript  will show the content--  -->
+						
+					</div>
+					<!-- <div
+						id="menuCard"
+						class="grid md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-4 p-3 bg-white"
+					>
+						Javascript  will show the content
+						
+					</div> -->
+					<div id="noitemfound" class="hideme  p-2 w-full">
+						<h1 class="text-3xl text-red-200 grid-2 text-center">NO ITEM FOUND</h1>
+					</div>
+					<div id="NavMenuBtns" class="hideme">
+						<div class="flex justify-center">
+							<button id="menuNav"
+								data-id="Previous"
+								onclick="Previous()"
+								class="Previous relative block py-1.5 px-3  border-0 bg-transparent outline-none 
+								transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"           
+							>Previous</button>
+							<ul id="pageList" class="flex ">
+								<li class="p-2">PAGE-1</li>
+								<li class="p-2">PAGE-2</li>
+								<li class="p-2">PAGE-3</li>
+							</ul>
+							<button id="menuNav"
+								data-id="next"
+								onclick="next() "
+								class="next relative block py-1.5 px-3  border-0 bg-transparent outline-none 
+								transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none" 
+							>Next</button>
+						</div>
+					</div>
+				</article>
+			</section>
 			<section class="mb-20 text-gray-700">
 				<div class="md:w-11/12 lg:w-4/5 m-auto">
 					<div class="text-center md:max-w-xl lg:max-w-3xl mx-auto">
@@ -435,6 +569,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- footer -->
 			<footer id="contact" class=" relative text-center lg:text-left bg-gray-100 text-gray-600">
 				<button class="absolute right-10 top-3.5 z-50 " id="btn-back-to-top">
 					<i class="fa fa-arrow-up text-4xl"></i>
@@ -709,11 +844,12 @@
 					<a
 						class="text-gray-600 font-semibold"
 						href="https:// " target="_blank"
-						>Dev.Abdulsalm.js</a
+						>devAbdulsalam.js</a
 					>
 				</div>
-		</footer>
+			</footer>
 		<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
 		<script src="scrpit.js"></script>
+		<script src="menu.js"></script>
 	</body>
 </html>

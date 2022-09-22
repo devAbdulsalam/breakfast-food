@@ -91,4 +91,19 @@
 .borderblue{
     @apply border-2 border-solid border-blue-600 !important;
 }
+.selected {
+     color: rgb(25, 121, 211);
+}
+.record {
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/stats-bg.jpg");
+     background-size: cover;
+}
+
+@media (min-width: 1365px) {
+     .record{
+          background-attachment: fixed;
+     }
+}
+
+
 };
